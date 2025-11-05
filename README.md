@@ -125,4 +125,4 @@ To explore **every step** — from provisioning infrastructure with Terraform, c
 
 read the full detailed article on **Medium** 👇
 
-### 👉 **Read the complete execution guide on Medium**
+### [👉 **Read the complete execution guide on Medium**](https://medium.com/@krishnafattepurkar/end-to-end-simple-mlops-pipeline-with-terraform-eks-github-actions-argo-cd-a632a9111060)
