@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Techikrish/MlOps-insurance-predictor.git  #change to your repo URL 
+    repoURL: https://github.com/GK17282271/MlOps-insurance-predictor.git  #change to your repo URL 
     targetRevision: main
     path: k8s
   destination:
