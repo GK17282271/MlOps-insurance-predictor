@@ -13,14 +13,20 @@ spec:
     metadata:
       labels:
         app: insurance-app
+      annotations:
+        sidecar.opentelemetry.io/inject: "true"
     spec:
       containers:
       - name: insurance-app
-        # CI will replace IMAGE_HERE with dockerhub_user/insurance-predictor:<sha>
         image: georg055/insurance-predictor:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
+        env:
+        - name: OTEL_EXPORTER_OTLP_ENDPOINT
+          value: "localhost:4317"
+        - name: OTEL_SERVICE_NAME
+          value: "insurance-predictor"
         readinessProbe:
           httpGet:
             path: /
