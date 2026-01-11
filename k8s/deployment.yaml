@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: insurance-app
-        image: georg055/insurance-predictor:latest
+        image: georg055/insurance-predictor:6
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
